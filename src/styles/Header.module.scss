@@ -57,3 +57,11 @@
         }
     }
 }
+
+@media (max-width: 1367px) {
+    .navbar {
+        &--center {
+            display: none;
+        }
+    }
+}

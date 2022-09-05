@@ -92,21 +92,18 @@
             padding: 2.4rem;
         }
     }
-    .projects {
-        margin-top: 2rem;
-    }
     .contact {
         text-align: center;
         justify-content: center;
-    }
-    .col2 {
-        margin: 1.6rem 0;
     }
 }
 
 @media (max-width: 1367px) {
     .project {
         justify-content: center;
+    }
+    .projects {
+        margin-top: 2rem;
     }
     .skills {
         order: 1;
@@ -116,5 +113,8 @@
         &--icons {
             justify-content: center;
         }
+    }
+    .col2 {
+        margin: 1.6rem 0;
     }
 }

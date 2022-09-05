@@ -82,9 +82,9 @@ background: #fff;
 background: #000;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     html {
-        font-size: 40%;
+        font-size: 30%;
     }
     .shadow {
         box-shadow: none;
@@ -92,9 +92,9 @@ background: #000;
     }
 }
 
-@media (max-width: 1367px) {
+@media (max-width: 1365px) {
     html {
-        font-size: 45%;
+        font-size: 40%;
     }
     .shadow {
         box-shadow: none;
