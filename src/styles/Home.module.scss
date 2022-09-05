@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.col2 {
+    margin: 5rem 10rem 0;
+}
+
+.profile {
+    background-color: #fff;
+    &--navbar {
+        padding: {
+            right: 1.6rem;
+            left: 1.6rem;
+        }
+    }
+    &--content {
+        padding: 3.2rem;
+        justify-content: space-between;
+        &__avatarIMG {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__text {
+            display: flex;
+            align-items: baseline;
+            padding: {
+                top: 1.6rem;
+                bottom: 1.6rem;
+            }
+        }
+    }
+}
+
+.projects {
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    &--button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 0.8rem;
+        transition: all 0.15s ease-in-out;
+        &:hover {
+            background-color: rgba($color: #000000, $alpha: 0.075);
+        }
+        &:focus {
+            background-color: rgba($color: #000000, $alpha: 0.075);
+        }
+    }
+    &--icon {
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 0.8rem;
+    }
+    margin-bottom: 5rem;
+}
+
+.skills {
+    background-color: #fff;
+    &--navbar {
+        padding: {
+            right: 1.6rem;
+            left: 1.6rem;
+        }
+    }
+    &--content {
+        padding: 3.2rem;
+    }
+    &--icon {
+        margin: 1.6rem 0;
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 3.2rem;
+    border-top: solid 0.2rem #000;
+    background-color: #fff;
+}

@@ -1,0 +1,69 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500;600;700&family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 50%;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font: {
+        size: 1.6rem;
+        family: 'IBM Plex Mono', monospace;
+    }
+    background: {
+        image: url('../../public/background.jpg');
+        size: cover;
+        position: 0 65%;
+    };
+}
+
+input, button {
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.ff {
+    &-inter {
+        font-family: 'Inter', sans-serif;
+    }
+    &-ibm {
+        font-family: 'IBM Plex Mono', monospace;
+    }
+}
+
+.shadow {
+    border: solid 1rem #000;
+    box-shadow: 2.2rem 1.5rem 0 #000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: {
+        top: 1.1rem;
+        bottom: 1.1rem;
+    }
+    background-color: #000;
+    color: #fff;
+}

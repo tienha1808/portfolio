@@ -1,0 +1,34 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 6.3rem 7.5rem;
+    &::after {
+        content: '#tienha';
+        position: absolute;
+        display: inline;
+        font-size: 4.2rem;
+        bottom: 6.3rem;
+        right: 7.5rem;
+        padding: 0.8rem;
+        background-color: #FFFF50;
+        transform: translate(-50%, 25%);
+        border: solid 1rem #000;
+        box-shadow: 2.2rem 1.5rem 0 #000;
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+    background: {
+        image: url('../../public/banner.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: 0 100%;
+    };
+    &--content {
+        padding: 2.4rem 3.2rem;
+    }
+}
+    
