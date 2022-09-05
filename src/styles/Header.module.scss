@@ -18,6 +18,7 @@
     }
     &--end {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
@@ -34,6 +35,25 @@
             top: -1rem;
             left: 0;
             background-color: #fff;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        padding: {
+            right: 1.2rem;
+            left: 1.2rem;
+        }
+    }
+    .navbar {
+        &--start {
+            justify-content: center;
+        }
+        &--local {
+            &::before {
+                display: none;
+            }
         }
     }
 }

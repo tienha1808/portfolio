@@ -34,3 +34,16 @@
         }
     }
 }
+
+@media (max-width: 1367px) {
+    .project {
+        margin: 1.6rem 0;
+        &--content {
+            text-align: center;
+            &__icon {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

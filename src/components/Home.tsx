@@ -28,7 +28,7 @@ function Home() {
     return (
         <>
             <div className={cx('container')}>
-                <div className={cx('profile', 'shadow l-6')}>
+                <div className={cx('profile', 'shadow c-12 m-12 l-6')}>
                     <nav className={cx('profile--navbar', 'navbar fs-3')}>
                         <div>
                             <img style={{width: '100%', height: '100%'}} src={compIcon} alt="" />
@@ -39,10 +39,10 @@ function Home() {
                         </div>
                     </nav>
                     <div className={cx('profile--content', 'row')}>
-                        <div className='col l-4'>
-                            <img className={cx('profile--content__avatarIMG', 'l-8')} src={avatarIMG} alt="" />
+                        <div className='col c-12 m-4 l-4'>
+                            <img style={{width: '100%', height: '100%', objectFit: 'cover'}} src={avatarIMG} alt="" />
                         </div>
-                        <div className='col l-8'>
+                        <div className='col c-12 m-8 l-8'>
                             <div className={cx('profile--content__text')}>
                                 <div className='fs-2 fw-bold ff-inter'>
                                     {tienha.name.toUpperCase()}&nbsp;
@@ -60,33 +60,33 @@ function Home() {
                         </div>
                     </div>
                     <div className={cx('contact')}>
-                        <ul className='l-6 fs-5 fw-semibold'>
+                        <ul className='c-12 m-6 l-6 fs-4 fw-semibold'>
                             <li className='row'>
-                                <div className='col l-2'>
+                                <div className='col c-12 m-4 l-4'>
                                     Email:
                                 </div>
-                                <div className='col l-10'>
+                                <div className='col c-12 m-8 l-8'>
                                     {tienha.email}
                                 </div>
                             </li>
                             <li className='row'>
-                                <div className='col l-2'>
+                                <div className='col c-12 m-4 l-4'>
                                     Phone:
                                 </div>
-                                <div className='col l-10'>
+                                <div className='col c-12 m-8 l-8'>
                                     {tienha.phone}
                                 </div>
                             </li>
                         </ul>
-                        <div className='fs-4 fw-semibold ff-inter'>
+                        <div className='fs-3 fw-semibold ff-inter'>
                             {tienha.address}
                         </div>
                     </div>
                 </div>
-                <div className={cx('projects', 'l-4')}>
+                <div className={cx('projects', 'c-12 m-12 l-4')}>
                     <ul className='row'>
                         {projects.map(project => (
-                            <li key={project.id} className={cx('project', 'col l-4')}>
+                            <li key={project.id} className={cx('project', 'col c-6 m-3 l-4')}>
                                 <button
                                     className={cx('project--button', 'l-12')}
                                     title='Double Click to Open File'
@@ -108,7 +108,7 @@ function Home() {
                 </div>
             </div>
             <div className={cx('container', 'col2')}>
-                <div className={cx('skills', 'shadow l-3')}>
+                <div className={cx('skills', 'shadow m-12 l-3')}>
                     <nav className={cx('skills--navbar', 'navbar fs-3')}>
                         <div>
                             <img style={{width: '100%', height: '100%'}} src={compIcon} alt="" />
@@ -119,16 +119,16 @@ function Home() {
                         </div>
                     </nav>
                     <div className={cx('skills--content')}>
-                        <ul className='row'>
+                        <ul className={cx('row', 'skills--icons')}>
                             {skills.map(skill => (
-                                <li className={cx('col l-3', 'skills--icon')}>
+                                <li className={cx('col c-3 m-1 l-3', 'skills--icon')}>
                                     <img style={{width: '100%', height: '100%'}} src={skill.icon} alt="" />
                                 </li>
                             ))}
                         </ul>
                     </div>
                 </div>
-                <div className='l-5'>
+                <div className='m-12 l-5'>
                     <Project project={project} setProject={setProject} />
                 </div>
             </div>

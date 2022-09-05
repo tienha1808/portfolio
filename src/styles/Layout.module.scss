@@ -31,4 +31,30 @@
         padding: 2.4rem 3.2rem;
     }
 }
+
+@media (max-width: 769px) {
+    .container {
+        padding: 1.2rem 0.4rem;
+    }
+    .wrapper {
+        background-color: #fff;
+        background-image: none;
+        &--content {
+            padding: 0.8rem 1.2rem;
+        }
+    }
+}
     
+@media (max-width: 1367px) {
+    .container {
+        padding: 2.4rem 1.2rem;
+        &::after {
+            display: none;
+        }
+    }
+    .wrapper {
+        &--content {
+            padding: 2.4rem;
+        }
+    }
+}

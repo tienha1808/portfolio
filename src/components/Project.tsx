@@ -28,12 +28,12 @@ function Project({ project, setProject }:
                     </div>
                 </nav>
                 <div className={cx('project--content', 'row ff-inter')}>
-                    <div className='col c-4'>
-                        <a style={{width: '100%', height: '100%'}} href={project.page} target='_blank'>
+                    <div className='col c-12 m-4 l-4'>
+                        <a className={cx('project--content__icon')}  style={{width: '100%', height: '100%'}} href={project.page} target='_blank'>
                             <img className={cx('project--content__icon')} src={project.icon} alt="" />
                         </a>
                     </div>
-                    <div className='col c-8'>
+                    <div className='col c-12 m-8 l-8'>
                         <div className='fs-2 fw-bold'>
                             {project.name}
                         </div>
@@ -44,10 +44,10 @@ function Project({ project, setProject }:
                             {project.descripte}
                         </div>
                         <div className='fs-5 fw-semibold'>
-                            Source: <a style={{color: '#000'}} href={project.source}>{project.source}</a>
+                            Source: <a style={{color: '#000', wordBreak: 'break-all'}} href={project.source}>{project.source}</a>
                         </div>
                         <div className='fs-5 fw-semibold'>
-                            Link Page: <a style={{color: '#000'}} href={project.page}>{project.page}</a>
+                            Link Page: <a style={{color: '#000', wordBreak: 'break-all'}} href={project.page}>{project.page}</a>
                         </div>
                     </div>
                 </div>

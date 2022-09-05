@@ -48,6 +48,6 @@ export const projects: Array<Project> = [
         platform: 'ReactJS',
         descripte: '',
         source: 'https://github.com/tienha1808/portfolio',
-        page: '',
+        page: 'https://portfolio-tienha1808.vercel.app/',
     },
 ]

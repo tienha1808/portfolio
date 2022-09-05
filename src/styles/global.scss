@@ -21,6 +21,7 @@ body {
     overflow: hidden;
     font: {
         size: 1.6rem;
+        family: 'Inter', sans-serif;
         family: 'IBM Plex Mono', monospace;
     }
     background: {
@@ -58,6 +59,7 @@ ul {
 
 .navbar {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: {
@@ -66,4 +68,38 @@ ul {
     }
     background-color: #000;
     color: #fff;
+}
+
+::-webkit-scrollbar {
+width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+background: #000;
+}
+
+@media (max-width: 769px) {
+    html {
+        font-size: 40%;
+    }
+    .shadow {
+        box-shadow: none;
+        border: solid 0.5rem #000;
+    }
+}
+
+@media (max-width: 1367px) {
+    html {
+        font-size: 45%;
+    }
+    .shadow {
+        box-shadow: none;
+    }
+    ::-webkit-scrollbar {
+        width: 0.5rem;
+    }
 }
