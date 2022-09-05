@@ -23,8 +23,6 @@ function Home() {
         setProject(projects[id])
     }
 
-    console.log(project)
-
     return (
         <>
             <div className={cx('container')}>
@@ -108,7 +106,7 @@ function Home() {
                 </div>
             </div>
             <div className={cx('container', 'col2')}>
-                <div className={cx('skills', 'shadow m-12 l-3')}>
+                <div className={cx('skills', 'shadow m-12 l-6')}>
                     <nav className={cx('skills--navbar', 'navbar fs-3')}>
                         <div>
                             <img style={{width: '100%', height: '100%'}} src={compIcon} alt="" />
@@ -121,7 +119,7 @@ function Home() {
                     <div className={cx('skills--content')}>
                         <ul className={cx('row', 'skills--icons')}>
                             {skills.map(skill => (
-                                <li className={cx('col c-3 m-1 l-3', 'skills--icon')}>
+                                <li className={cx('col c-3 m-1 l-2', 'skills--icon')}>
                                     <img style={{width: '100%', height: '100%'}} src={skill.icon} alt="" />
                                 </li>
                             ))}

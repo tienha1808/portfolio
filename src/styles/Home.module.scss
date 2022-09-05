@@ -62,6 +62,8 @@
 
 .skills {
     background-color: #fff;
+    max-height: 32.5rem;
+    overflow-x: auto;
     &--navbar {
         padding: {
             right: 1.6rem;
