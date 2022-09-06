@@ -1,0 +1,27 @@
+.container {
+    background-color: #000;
+}
+
+.skills {
+    margin: auto;
+
+    &--icon {
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 1025px) {
+    .skills {
+        &--icon {
+            padding: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .skills {
+        &--icon {
+            padding: 1.5rem;
+        }
+    }
+}

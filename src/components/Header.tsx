@@ -1,45 +1,50 @@
-import classNames from 'classnames/bind'
-import styles from '../styles/Header.module.scss'
-import reactIcon from '../apps/skills/react.png'
-import globalIcon from '../apps/icons/global.png'
-import { Dispatch, SetStateAction, useEffect, useState } from 'react'
+import classNames from "classnames/bind";
+import styles from '../styles/Header.module.scss';
 
 const cx = classNames.bind(styles)
 
+const navbar = [
+    {
+        id: 0,
+        name: 'Home',
+        path: '/'
+    },
+    {
+        id: 1,
+        name: 'About',
+        path: '#about'
+    },
+    {
+        id: 2,
+        name: 'Projects',
+        path: '#projects'
+    }
+]
+
 function Header() {
-
-    const [ date, setDate ]: [ Date | undefined, Dispatch<SetStateAction< Date | undefined >>] = useState()
-
-    useEffect(() => {
-        const timeInterval = setInterval(() => {
-            const time = new Date()
-            setDate(time)
-        }, 1000)
-        return () => clearInterval(timeInterval)
-    }, [date])
-
     return (
         <>
-            <header className={cx('container', 'navbar fs-3')}>
-                <div className={cx('navbar--start', 'c-12 m-2 l-2')}>
-                    <div className={cx('navbar--icon')}>
-                        <img style={{width: '100%', height: '100%'}} src={reactIcon} alt="" />
-                    </div>
-                    ReactJS.OS
+            <header className={cx('container', 'row')}>
+                <div className={cx('header--brand', 'c-5 m-3 l-4')}>
+                    <a className='fs-1 fw-bold' href='/'>
+                        #tienha
+                    </a>
                 </div>
-                <div className={cx('navbar--center', 'm-6 l-6 fs-3')}>
-                    CONFIG {date?.getFullYear()} *** {date?.getMonth()} {date?.getDay()} *** LIVE FROM VN
-                </div>
-                <div className={cx('navbar--end', 'c-12 m-4 l-3')}>
-                    <div className='c-9 m-8 l-8'>
-                        {date?.getHours()}:{date?.getMinutes()}:{date?.getSeconds()} (GMT+7)
-                    </div>
-                    <div className={cx('navbar--local', 'c-3 m-4 l-4')}>
-                        <div className={cx('navbar--icon')}>
-                            <img style={{width: '100%', height: '100%'}} src={globalIcon} alt="" />
-                        </div>
-                        VN
-                    </div>
+                <ul className={cx('header--navbar', 'c-12 m-5 l-4 row')}>
+                    {navbar.map(item => (
+                        <li className='l-4'>
+                            <a className='fs-3' href={item.path}>
+                                {item.name}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+                <div className={cx('header--contact', 'c-5 m-3 l-4')}>
+                    <button className={cx('header--contact__btn')}>
+                        <a className='fs-3' href='#contact'>
+                            Contact Me
+                        </a>
+                    </button>
                 </div>
             </header>
         </>

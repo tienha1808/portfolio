@@ -1,12 +1,11 @@
-import anonime from '../apps/brands/anime.png'
-import chat from '../apps/brands/chat.png'
-import store from '../apps/brands/store.png'
-import cv from '../apps/brands/cv.png'
+import AnonimeThumbnail from '../apps/brands/Anonime.png'
+import ChatBoxThumbnail from '../apps/brands/ChatBox.png'
+import StreetStoreThumbnail from '../apps/brands/StreetStore.png'
 
 interface Project {
     id: number,
     name: string,
-    icon: string,
+    thumbnail: string,
     platform: 'ReactJS' | 'NextJS',
     descripte: string,
     source: string,
@@ -17,7 +16,7 @@ export const projects: Array<Project> = [
     {
         id: 0,
         name: 'Anonime',
-        icon: anonime,
+        thumbnail: AnonimeThumbnail,
         platform: 'NextJS',
         descripte: `It's built based on Anime Movie Platform. It uses NextJS Framework.`,
         source: 'https://github.com/tienha1808/anonime',
@@ -26,7 +25,7 @@ export const projects: Array<Project> = [
     {
         id: 1,
         name: 'Street Store',
-        icon: store,
+        thumbnail: StreetStoreThumbnail,
         platform: 'ReactJS',
         descripte: `It's built based on Ecommerce Store Platform. It uses ReactJS Framework and using Redux Toolkit for state management.`,
         source: 'https://github.com/tienha1808/StreetStore',
@@ -35,19 +34,10 @@ export const projects: Array<Project> = [
     {
         id: 2,
         name: 'Chat Box',
-        icon: chat,
+        thumbnail: ChatBoxThumbnail,
         platform: 'ReactJS',
         descripte: `It's built based on Commercial Connect Platform. It uses ReactJS Framework and using Redux Toolkit, Redux Saga for state management`,
         source: 'https://github.com/tienha1808/ChatBox',
         page: 'https://tienha1808.github.io/ChatBox/',
-    },
-    {
-        id: 3,
-        name: 'Portfolio',
-        icon: cv,
-        platform: 'ReactJS',
-        descripte: '',
-        source: 'https://github.com/tienha1808/portfolio',
-        page: 'https://portfolio-tienha1808.vercel.app/',
     },
 ]

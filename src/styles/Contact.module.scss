@@ -1,0 +1,59 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.footer {
+    position: absolute;
+    bottom: 2.5rem;
+    color: rgba($color: #fff, $alpha: 0.5);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 10rem auto;
+}
+
+.messenger {
+    font: {
+        size: 10rem;
+        weight: bold;
+    }
+}
+
+.contact {
+    margin-bottom: 5rem;
+    &--content {
+        margin-top: 2.5rem;
+
+        &__link {
+            color: #0074cc;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .wrapper {
+        margin: 5rem 2.5rem;
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &--content {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .contact {
+        display: block;
+    }
+}

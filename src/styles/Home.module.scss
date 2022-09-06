@@ -1,122 +1,78 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    margin: 17.5rem auto;
 }
 
-.col2 {
-    margin: 5rem 10rem 0;
+.bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: {
+        image: url('../apps/images/avatar.jpg');
+        repeat: no-repeat;
+        size: cover;
+        position: 0 75%;
+    };
+    opacity: 0.75;
 }
 
 .profile {
-    background-color: #fff;
-    &--navbar {
-        padding: {
-            right: 1.6rem;
-            left: 1.6rem;
+    &--title {
+        font: {
+            size: 9rem;
+            weight: bold;
         }
     }
-    &--content {
-        padding: 3.2rem;
-        justify-content: space-between;
-        &__text {
+    &--objective {
+        margin: 1rem 0 3rem;
+    }
+    &--contact {
+        display: flex;
+    }
+    &--mail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-color);
+        background-color: var(--primary-100);
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+        padding: 2rem 0;
+
+        &__icon {
             display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-            padding: {
-                top: 1.6rem;
-                bottom: 1.6rem;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+    }
+    &--download {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        &__text {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: all 0.15s ease-in-out;
+            &:hover {
+                opacity: 0.75   ;
             }
         }
     }
 }
 
-.projects {
-    text-align: center;
-}
-
-.project {
-    display: flex;
-    &--button {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: transparent;
-        border-radius: 0.8rem;
-        transition: all 0.15s ease-in-out;
-        &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.075);
-        }
-        &:focus {
-            background-color: rgba($color: #000000, $alpha: 0.075);
-        }
-    }
-    &--icon {
-        width: 12rem;
-        height: 12rem;
-        margin-bottom: 0.8rem;
-    }
-    margin-bottom: 5rem;
-}
-
-.skills {
-    background-color: #fff;
-    max-height: 32.5rem;
-    overflow-x: auto;
-    &--navbar {
-        padding: {
-            right: 1.6rem;
-            left: 1.6rem;
-        }
-    }
-    &--content {
-        padding: 3.2rem;
-    }
-    &--icon {
-        margin: 1.6rem 0;
-    }
-}
-
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.6rem 3.2rem;
-    border-top: solid 0.2rem #000;
-    background-color: #fff;
-}
-
-@media (max-width: 769px) {
-    .profile {
-        &--content {
-            padding: 2.4rem;
-        }
-    }
-    .contact {
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1367px) {
-    .project {
-        justify-content: center;
-    }
-    .projects {
-        margin-top: 2rem;
-    }
-    .skills {
-        order: 1;
-        &--content {
-            padding: 0.8rem;
-        }
-        &--icons {
-            justify-content: center;
-        }
-    }
-    .col2 {
-        margin: 1.6rem 0;
+@media (max-width: 1025px) {
+    .container {
+        margin: 17.5rem 2.5rem 2.5rem;
     }
 }
