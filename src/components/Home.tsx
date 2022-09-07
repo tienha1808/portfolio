@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.scss'
 import { profile } from '../data'
 import mail from '../apps/icons/mail.png'
 import download from '../apps/icons/download.png'
-import CV from '../apps/images/CVE.png'
+import CV from '../apps/images/CV.png'
 
 const cx = classNames.bind(styles)
 
