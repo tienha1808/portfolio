@@ -4,8 +4,7 @@ import styles from '../styles/Home.module.scss'
 import { profile } from '../data'
 import mail from '../apps/icons/mail.png'
 import download from '../apps/icons/download.png'
-import avatar from '../apps/images/avatar.jpg'
-import Skills from "./Skills";
+import CV from '../apps/images/CVE.png'
 
 const cx = classNames.bind(styles)
 
@@ -40,7 +39,7 @@ function Home() {
                     </button>
                     <a
                         className={cx('profile--download', 'c-6')}
-                        href={mail}
+                        href={CV}
                         download
                     >
                         <div className={cx('profile--download__icon')}>
