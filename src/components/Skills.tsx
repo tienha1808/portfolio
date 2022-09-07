@@ -1,4 +1,3 @@
-import React from 'react'
 import { skills } from '../data'
 import classNames from 'classnames/bind'
 import styles from '../styles/Skills.module.scss'

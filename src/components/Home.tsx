@@ -1,4 +1,3 @@
-import Header from "./Header";
 import classNames from 'classnames/bind'
 import styles from '../styles/Home.module.scss'
 import { profile } from '../data'
