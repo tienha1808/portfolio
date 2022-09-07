@@ -38,6 +38,7 @@ function Home() {
                     <a
                         className={cx('profile--download', 'c-6')}
                         href='https://www.canva.com/design/DAFLgre020U/DnWSzo4GkShFyMkzIaKxAw/view?utm_content=DAFLgre020U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'
+                        target='_blank'
                     >
                         <div className={cx('profile--download__icon')}>
                             <img style={{width: '100%', height: '100%'}} src={download} alt="" />
