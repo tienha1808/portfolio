@@ -18,12 +18,13 @@ export const profile: Profile = {
     tag: '@tienha1808',
     birth: '18/08/1998',
     job: 'Frond-end ReactJS Developer',
-    objective: 'I believe that I will bring to innovative ideas and new experiences to users and customers.',
-    descripte: `With my knowledge, I believe that I will bring to innovative ideas
-    and new experiences to users and customers.
-    At the same time, want to change careers to increase income, find
-    joy in working. From there, the motivation for me to continue to
-    study and develop myself in this field.
+    objective: 'I believe I will bring innovative ideas and new experiences to users and customers.',
+    descripte: `
+    I am a newbie Front-end ReactJS Developer, but I studied and practiced
+    hard with my small projects. At the moment, I ultimately believe that my
+    skills are enough to work in a professional environment. I also desire to
+    learn much knowledge from a clever and kind team leader.
+    
     `,
     email: 'viettien1808@gmail.com',
     phone: '0905905246',
