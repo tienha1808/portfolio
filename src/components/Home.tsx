@@ -37,7 +37,7 @@ function Home() {
                     </button>
                     <a
                         className={cx('profile--download', 'c-6')}
-                        href='../apps/files/CVE.pdf'
+                        href='../../public/files/CVE.pdf'
                         download='CVE.pdf'
                     >
                         <div className={cx('profile--download__icon')}>
