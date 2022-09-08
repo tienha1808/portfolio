@@ -18,7 +18,7 @@ function Projects() {
               My Projects:
             </div>
           </div>
-          <ul className={cx('projects', 'row')}>
+          <ul data-aos='zoom-in-up' className={cx('projects', 'row')}>
             {projects.map(project => (
               <li key={project.name} className={cx('projects--item', 'c-12 m-4')}>
                 <a href={project.page} target='_blank'>

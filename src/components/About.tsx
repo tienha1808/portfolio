@@ -21,7 +21,7 @@ function About() {
     <>
         <div id='about' className={cx('container')}>
             <div className={cx('wrapper', 'row')}>
-                <div className={cx('profile', 'row c-12 l-9')}>
+                <div data-aos='zoom-in-right' className={cx('profile', 'row c-12 l-9')}>
                     <div className='text-180'>
                         <div className='row'>
                             <div className={cx('profile--quotes', 'c-3 m-2 ff-pfd')}>
@@ -49,7 +49,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className='c-12 l-2'>
+                <div data-aos='fade-left' className='c-12 l-2'>
                     <ul className='ff-pfd text-120'>
                         {Object.entries(value).map(item => (
                             <li className={cx('level')} key={item[0]}>

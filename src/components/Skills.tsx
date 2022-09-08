@@ -7,7 +7,7 @@ const cx = classNames.bind(styles)
 function Skills() {
   return (
     <>
-        <div className={cx('container')}>
+        <div data-aos='zoom-out-up' data-aos-duration='1500' className={cx('container')}>
             <ul className={cx('skills', 'row')}>
                 {skills.map(skill => (
                     <li key={skill.name} className={cx('skills--icon', 'c-2')}>

@@ -10,8 +10,8 @@ function Home() {
     return (
         <>
             <div className={cx('container', 'row')}>
-                <div className={cx('bg' ,'c-12 l-6')} />
-                <div className={cx('profile--title', 'text-120 ff-pfd')}>
+                <div data-aos='zoom-in' className={cx('bg' ,'c-12 l-6')} />
+                <div data-aos='fade-right' className={cx('profile--title', 'text-120 ff-pfd')}>
                     <div>
                         Hello!
                     </div>
@@ -19,12 +19,12 @@ function Home() {
                         I'm {profile.name}
                     </div>
                 </div>
-                <div className={cx('profile--objective', 'c-12 fs-3 text-180')}>
+                <div data-aos='fade-left' className={cx('profile--objective', 'c-12 fs-3 text-180')}>
                     <div className='c-12 l-6'>
                         {profile.objective}
                     </div>
                 </div>
-                <div className={cx('profile--contact', 'c-12 l-4 fs-3 text-120')}>
+                <div data-aos='fade-right' className={cx('profile--contact', 'c-12 l-4 fs-3 text-120')}>
                     <button className='c-6'>
                         <a className={cx('profile--mail')} href={`mailto:${profile.email}`}>
                             <div className={cx('profile--mail__icon')}>
